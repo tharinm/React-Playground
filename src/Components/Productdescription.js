@@ -1,14 +1,8 @@
-function Productdescription({ name, price, description }){
-   
+function Productdescription(props){
+//    console.log(props.children)
     return (
-        <>
-            <h3>
-                {name}
-            </h3>
-            <p>
-                {price}
-            </p>
-        <p>{description}</p>
+      <>
+        <p> {props.children}</p>
       </>
     );
 }

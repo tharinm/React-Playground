@@ -1,12 +1,16 @@
 import Productdescription from "./Productdescription";
 
-function Product(props) {
+function Product({ name, price, description }) {
     
     
     
     return (
       <div>
-        <Productdescription {...props} />
+        <Productdescription>
+          <h3>{name}</h3>
+          <p>{price}</p>
+          <p>{description}</p>
+        </Productdescription>
       </div>
     );
 }
