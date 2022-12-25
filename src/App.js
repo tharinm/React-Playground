@@ -3,6 +3,8 @@ import './App.css';
 import Simplecard from './Components/Simplecard';
 import Navbar from './Components/Navbar';
 import Product from './Components/Prouduct';
+import Todolist from './Components/Todolist';
+
 
 function App() {
   const name = "Tharindu";
@@ -29,20 +31,8 @@ function App() {
       {/* { myJsx} */}
 
       {/* <h1 style={{ color: 'white' }}>Hey try again {person.name} { person.valu}</h1> */}
-      <h1>My My Products</h1>
-      <Product
-        name="Apple"
-        price={150}
-        stats={{
-          views: 20,
-          purchase: 10,
-        }}
-        description="ddfsdf"
-      />
-      <Product name="Banana" price={100} description="ddfsdf" />
-      <Product name="Avacado" price={200} description="ddfsdf" />
-      <Product name="Gauava" price={300} description="ddfsdf" />
-      <Product name="PineApple" price={740} description="ddfsdf" />
+
+      <Todolist />
     </div>
   );
 }
