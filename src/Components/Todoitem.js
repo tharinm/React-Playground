@@ -1,26 +1,10 @@
 function Todoitem({ name , status})
 {
-    if (status === true) {
-        return (
-            <div>
-                <div>
-                     {name} - Completed
-             
-                </div>
-            </div>
-        );
-    }
-   
-   
-        return (
-    <div>
+    return (
         <div>
-             {name} {status} - Pending
-     
+            {name} - {status === true ? "Completed" : "Pending"}
         </div>
-            </div>
-        )
-        
+    )
 }
 
 export default Todoitem
