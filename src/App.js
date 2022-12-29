@@ -4,6 +4,7 @@ import Simplecard from './Components/Simplecard';
 import Navbar from './Components/Navbar';
 import Product from './Components/Prouduct';
 import Todolist from './Components/Todolist';
+import MyButton from './Components/MyButton';
 
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
 
   const handleClick = () => {
     console.log('Click Me')
+  }
+
+  const MyButton = () => {
+    console.log('Paasing Event Handlers');
   }
 
 
@@ -29,18 +34,18 @@ function App() {
   // }
 
   return (
-    <div className="MyProducts">
+    <div className="">
       {/* <h1 style={{ color: 'red', backgroundColor: 'white' }}>Hello {name} your */}
       {/* age is {8 * 3}</h1> */}
       {/* {myalert()} */}
       {/* { myJsx} */}
       {/* <h1 style={{ color: 'white' }}>Hey try again {person.name} { person.valu}</h1> */}
       <Todolist />
-      <button onClick={handleClick}>
-        CLICK
-      </button>
-     
-     
+      {/* <button onClick={handleClick}> */}
+      {/* CLICK */}
+      {/* </button><br></br> */}
+
+      <MyButton />
     </div>
   );
 }
