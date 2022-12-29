@@ -6,20 +6,18 @@ import Product from './Components/Prouduct';
 import Todolist from './Components/Todolist';
 import MyButton from './Components/MyButton';
 import Test from './Components/Test';
+import {useState} from 'react'
 
 
 function App() {
-  const name = "Tharindu";
 
-  const handleClick = () => {
-    console.log('Click Me')
-  }
+  let [count ,setCount]= useState(0);
 
-  const MyButton = () => {
-    console.log('Paasing Event Handlers');
-  }
-
-
+  const handleincrement = () => {
+    //count++;
+    setCount(count+1)
+    
+  };
   // const myJsx = (
     // <div>
     {/* <h2 style={{color:'purple'}}>Hey</h2> */}
@@ -28,26 +26,18 @@ function App() {
   // function myalert() {
   //   alert("Hello Tharindu");
   // }
-  
+  console.log(count)
+  console.log('Renderind');
   // const person = {
     // name:"Tharindu",
     // valu:"28",
   // }
 
   return (
-    <div className="">
-      {/* <h1 style={{ color: 'red', backgroundColor: 'white' }}>Hello {name} your */}
-      {/* age is {8 * 3}</h1> */}
-      {/* {myalert()} */}
-      {/* { myJsx} */}
-      {/* <h1 style={{ color: 'white' }}>Hey try again {person.name} { person.valu}</h1> */}
-      <Todolist />
-      {/* <button onClick={handleClick}> */}
-      {/* CLICK */}
-      {/* </button><br></br> */}
-      <button >HEY</button>
-     
-      <Test onclick={ MyButton } />
+    <div className="" >
+      {count}<br></br>
+      <button onClick={handleincrement}>Increment</button>
+      
     </div>
   );
 }
