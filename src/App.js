@@ -8,7 +8,12 @@ import Todolist from './Components/Todolist';
 
 function App() {
   const name = "Tharindu";
-  
+
+  const handleClick = () => {
+    console.log('Click Me')
+  }
+
+
   // const myJsx = (
     // <div>
     {/* <h2 style={{color:'purple'}}>Hey</h2> */}
@@ -29,10 +34,13 @@ function App() {
       {/* age is {8 * 3}</h1> */}
       {/* {myalert()} */}
       {/* { myJsx} */}
-
       {/* <h1 style={{ color: 'white' }}>Hey try again {person.name} { person.valu}</h1> */}
-
       <Todolist />
+      <button onClick={handleClick}>
+        CLICK
+      </button>
+     
+     
     </div>
   );
 }
