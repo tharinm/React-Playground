@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Product from './Components/Prouduct';
 import Todolist from './Components/Todolist';
 import MyButton from './Components/MyButton';
+import Test from './Components/Test';
 
 
 function App() {
@@ -44,8 +45,9 @@ function App() {
       {/* <button onClick={handleClick}> */}
       {/* CLICK */}
       {/* </button><br></br> */}
-
-      <MyButton />
+      <button >HEY</button>
+     
+      <Test onclick={ MyButton } />
     </div>
   );
 }
