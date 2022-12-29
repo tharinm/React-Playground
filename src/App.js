@@ -17,20 +17,25 @@ function App() {
     y : 5
   })
 
+  const [numbers, setNumbers] = useState([1, 2, 3, 4]);
+
   const handleincrement = () => {
     //count++;
-    setCount(count+1)
+    const arr = numbers.map((num) => {
+      return num * 2;
+    });
+    setNumbers(arr);
     
   };
 
-  const positions= () => {
-    setPosition({
-      
-      ...position,
-      x: 4,
-      
-    })
-  }
+  // const positions= () => {
+    // setPosition({
+      // 
+      // ...position,
+      // x: 4,
+      // 
+    // })
+  // }
   // const myJsx = (
     // <div>
     {/* <h2 style={{color:'purple'}}>Hey</h2> */}
@@ -45,15 +50,16 @@ function App() {
     // name:"Tharindu",
     // valu:"28",
   // }
+  console.log(numbers);
 
   return (
     <div className="" >
-      {count}<br></br>
-      x: {position.x}<br></br>
-      y:{position.y}<br></br>
-      <button onClick={handleincrement}>Increment</button>
+      {/* {count}<br></br> */}
+      {/* x: {position.x}<br></br> */}
+      {/* y:{position.y}<br></br> */}
+      <button onClick={handleincrement}>Update Array</button>
       <br></br>
-      <button onClick={positions}>POSITION</button>
+     
     </div>
   );
 }
